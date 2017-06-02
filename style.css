@@ -20,7 +20,7 @@ body{
   position: relative;
   box-sizing: border-box;
   top: 200px;
-  height: 400px;
+  height: 425px;
   width: 400px;
   background: white;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
@@ -33,6 +33,7 @@ body{
   margin: 10px 20px;
   height: 40px;
   width: auto;
+  font-family: 'Permanent Marker', cursive;
 }
 
 #modal > p{
@@ -40,6 +41,7 @@ body{
   padding: 0 20px;
   font-size: 18px;
   line-height: 1.5em;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .formInput{
@@ -85,6 +87,8 @@ body{
   font-family: sans-serif;
   background-color: #ff0000;
   color: white;
+  border-radius: 2px;
+  box-shadow: 0 2 4px rgba(0, 0, 0, 0.3);
 }
 
 #close-modal:hover{
@@ -105,6 +109,7 @@ body{
   box-sizing: border-box;
   background-color: green;
   box-shadow: 0 2 4px rgba(0, 0, 0, 0.3);
+  z-index: 1;
 }
 
 #header-text{
@@ -129,7 +134,33 @@ body{
   top: 100px;
   height: auto;
   width: 100%;
-  background-color: gray;
+}
+
+/*== HERO AREA ==*/
+#hero-area > img{
+  width: 100%;
+  height: auto;
+}
+
+/*==== BODY CONTENT =====*/
+#body-content{
+  box-sizing: border-box;
+  padding: 20px;
+  height: auto;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.content-title{
+  margin: 20px 0 5px 0;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.content-graf{
+  margin: 0;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  font-family: 'Open Sans', sans-serif;
 }
 
 @media screen and (max-width: 600px){
@@ -148,5 +179,9 @@ body{
   #header-image{
     float: none;
     padding: 10px;
-}
+  }
+
+  #page-container{
+    top: 164px;
+  }
 }

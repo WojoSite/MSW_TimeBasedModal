@@ -1,4 +1,4 @@
-var timeoutFn = window.setTimeout(showModal, 2000);
+window.setTimeout(showModal, 2000);
 var myModal = document.getElementById("modal-bg");
 
 function showModal() {
