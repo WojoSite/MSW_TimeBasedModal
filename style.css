@@ -5,7 +5,7 @@ body{
 
 /* ===== MODAL ===== */
 #modal-bg{
-  display: none;
+  display: flex;
   position: fixed;
   top: 0;
   left: 0;
@@ -19,11 +19,11 @@ body{
 #modal{
   position: relative;
   box-sizing: border-box;
-  top:   20%;
+  top: 5%;
   height: 425px;
   width: 400px;
   background: white;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.8);
   border: 1px solid black;
   border-radius: 2px;
   text-align: center;
@@ -34,28 +34,33 @@ body{
   height: 40px;
   width: auto;
   font-family: 'Permanent Marker', cursive;
+  font-size: 40px;
 }
 
 #modal > p{
   margin: 0;
-  padding: 0 20px;
+  padding: 10px 20px;
   font-size: 18px;
   line-height: 1.5em;
   font-family: 'Open Sans', sans-serif;
 }
 
 .formInput{
-  width: 150px;
-  height: 50px;
+  height: 40px;
+  width: 250px;
   margin: 5px 20px;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
-  font-size: 24px;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  font-size: 20px;
+  padding: 5px;
   font-family: 'Open Sans', sans-serif;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
 }
 
 #form-submit{
-  height: 50px;
-  width: 150px;
+  height: 40px;
+  padding: 5px;
+  width: 250px;
   margin: 5px auto;
   background-color: #ff0000;
   border: 1px solid black;
@@ -67,7 +72,8 @@ body{
 #form-submit > h2{
   margin: 0;
   color: white;
-  line-height: 50px;
+  line-height: 40px;
+  font-family: 'Permanent Marker', cursive;
 }
 
 #form-submit:hover{
